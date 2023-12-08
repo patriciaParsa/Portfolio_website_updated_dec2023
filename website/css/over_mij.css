@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2d2d2d;
+    --tertiary-color: #c49f1a;
+    --tertiary-color-lighter: #ebbf22;
+    --tertiary-color-lightest: #ffcf21;
+    --quaternary-color: #484848;
+    --quinary-color: #F1F2F3;
+    --senary-color: #8684ff;
+    --senary-color-lighter: #afaeff;
+
+    --max-width: 1200px;
+}
+
+::selection {
+    background-color: var(--quaternary-color);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scrollbar-color: var(--tertiary-color) var(--quaternary-color);
+}
+
+section {
+    background-color: var(--primary-color);
+}
+
+.section__container {
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.over_mij {
+    color: var(--quinary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.over_mij .over_mij_hoofd {
+    margin-bottom: 2rem;
+}
+
+.over_mij .over_mij_text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+.over_mij_foto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.over_mij_foto .bron {
+    font-size: xx-small;
+    color: var(--quinary-color);
+}
+
+@media  (width < 750px) {
+    .section__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .over_mij_foto {
+        width: 60%;
+    }
+}

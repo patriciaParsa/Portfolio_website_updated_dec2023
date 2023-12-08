@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2d2d2d;
+    --tertiary-color: #c49f1a;
+    --tertiary-color-lighter: #ebbf22;
+    --tertiary-color-lightest: #ffcf21;
+    --quaternary-color: #484848;
+    --quinary-color: #F1F2F3;
+    --senary-color: #8684ff;
+    --senary-color-lighter: #afaeff;
+
+    --max-width: 1200px;
+}
+
+::selection {
+    background-color: var(--quaternary-color);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scrollbar-color: var(--tertiary-color) var(--quaternary-color);
+}
+
+section {
+    background-color: var(--primary-color);
+}
+
+.section__container {
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 6rem;
+}
+
+.pf_inleiding {
+    color: var(--quinary-color);
+}
+
+.pf_inleiding p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pf_inleiding h1 {
+    margin: 10rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.pf_inleiding hr {
+    width: 100%;
+    border: 1px solid;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.pf_inhoud {
+    margin-bottom: 5rem;
+}
+
+.pf_pr .beschrijving h3 {
+    color: var(--quinary-color);
+    margin: 1rem 1rem 1rem 0;
+    text-decoration: underline;
+    color: var(--tertiary-color);
+}
+
+.pf_pr .beschrijving p {
+    color: var(--quinary-color);
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pf_pr .fotos {
+    display: flex;
+    gap: 3rem;
+    max-width: 50%;
+}
+
+.pf_pr .fotos-bon {
+    display: flex;
+    gap: 6rem;
+    max-width: 75%;
+    margin-top: 25px;
+}
+
+.pf_pr .fotos .desktop {
+    width: 70%;
+    height: 50%;
+}
+
+.pf_pr .fotos-bon .desktop-bon {
+    width: 60%;
+    height: 40%;
+}
+
+.pf_pr .fotos-bon .desktop-bon:hover {
+    width: 60rem;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.pf_pr .fotos .desktop:hover, .desktop_mobile:hover {
+    width: 50rem;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.pf_pr .fotos .mobile {
+    width: 40%;
+    height: 30%;
+}
+
+.pf_pr .fotos .mobile:hover {
+    width: 400%;
+    /* width: 40rem; */
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.pf_pr .fotos .desktop_mobile {
+    width: 40%;
+    height: 40%;
+}
+
+.pf_pr .fotos .desktop_mobile:hover {
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+@media  (width < 750px) {
+    .pf_pr .fotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pf_pr .fotos .mobile:hover {
+        transition: 1s;
+    }
+
+    .pf_pr .fotos .desktop:hover {
+        width: 35rem;
+    }
+}
+
+@media  (width < 450px) {
+    .pf_pr .fotos .desktop:hover {
+        width: 20rem;
+    }
+}
