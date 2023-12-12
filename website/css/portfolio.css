@@ -90,6 +90,7 @@ section {
     display: flex;
     gap: 3rem;
     max-width: 50%;
+    -webkit
 }
 
 .pf_pr .fotos-bon {
@@ -145,7 +146,7 @@ section {
 }
 
 @media  (width < 750px) {
-    .pf_pr .fotos {
+    .pf_pr .fotos, .fotos-bon {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
