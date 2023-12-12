@@ -89,14 +89,13 @@ section {
 .pf_pr .fotos {
     display: flex;
     gap: 3rem;
-    max-width: 50%;
-    -webkit
+    width: 50%;
 }
 
 .pf_pr .fotos-bon {
     display: flex;
     gap: 6rem;
-    max-width: 75%;
+    width: 75%;
     margin-top: 25px;
 }
 
